@@ -3,6 +3,8 @@ return {
     -- session
     {
         "dhruvasagar/vim-prosession",
+        lazy = false,
+        priority = 900,
         dependencies = { "tpope/vim-obsession" },
         init = function()
             vim.g.prosession_dir = vim.fn.expand("~/.cache/nvim/sessions/")
