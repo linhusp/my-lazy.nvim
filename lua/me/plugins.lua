@@ -1,4 +1,4 @@
--- plugins with simple configs, check `plugins/` for complex ones
+-- plugins with minimal configs, check `plugins/` for complex ones
 return {
     -- session
     {
@@ -44,7 +44,8 @@ return {
     },
 
     -- better python indent
-    { 'vimjas/vim-python-pep8-indent',
+    {
+        'vimjas/vim-python-pep8-indent',
         ft = 'python',
         config = function()
             vim.g.python_pep8_indent_hang_closing = 0
@@ -71,6 +72,7 @@ return {
             })
         end,
     },
+
     {
         "lukas-reineke/indent-blankline.nvim",
         config = function()
@@ -91,13 +93,13 @@ return {
             })
         end,
     },
+
     {
         'lewis6991/gitsigns.nvim',
         tag = 'release',
-        config = function()
-            require('gitsigns').setup({})
-        end
+        opts = {},
     },
+
     {
         'NvChad/nvim-colorizer.lua',
         config = function()
