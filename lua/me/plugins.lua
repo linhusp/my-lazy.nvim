@@ -106,6 +106,7 @@ return {
             require('colorizer').setup({
                 filetypes = {
                     '*',
+                    '!python',
                     css = { rgb_fn = true },
                     html = { names = false }
                 },
