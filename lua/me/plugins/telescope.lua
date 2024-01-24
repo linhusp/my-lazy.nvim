@@ -1,3 +1,4 @@
+-- find, filter, preview, pick
 return {
     {
         "nvim-telescope/telescope.nvim",

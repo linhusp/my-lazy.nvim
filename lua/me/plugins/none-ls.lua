@@ -1,4 +1,5 @@
--- linting & formatting
+-- use nvim as a language server to inject diagnostics, code actions
+-- also act as a general formatter
 return {
     "nvimtools/none-ls.nvim",
     config = function()

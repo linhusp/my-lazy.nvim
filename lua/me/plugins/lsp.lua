@@ -1,3 +1,4 @@
+-- better lsp managing
 return {
     {
         "williamboman/mason.nvim",

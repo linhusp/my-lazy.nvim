@@ -1,4 +1,4 @@
--- plugins with minimal configs, check `plugins/` for complex ones
+-- list of plugins with minimal configs, for complex ones check `./plugins/`
 return {
     -- session
     {

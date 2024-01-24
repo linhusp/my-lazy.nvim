@@ -1,3 +1,4 @@
+-- better syntax highlighting
 return {
     {
         "nvim-treesitter/nvim-treesitter",

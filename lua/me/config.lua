@@ -21,7 +21,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = 'yes'
 vim.opt.cursorline = true
---vim.opt.guicursor = { ['i-ci-ve'] = 'block' } # a more vanilla look but...
+--vim.opt.guicursor = { ['i-ci-ve'] = 'block' } -- a more vanilla look but...
 vim.opt.scrolloff = 5
 
 -- indent

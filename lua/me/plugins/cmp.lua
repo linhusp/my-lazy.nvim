@@ -1,3 +1,4 @@
+-- get completion from almost everything
 return {
     {
         "hrsh7th/nvim-cmp",
