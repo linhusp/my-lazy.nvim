@@ -76,7 +76,8 @@ return {
                 -- add source info to cmp menu ft. lspkind
                 formatting = {
                     format = require("lspkind").cmp_format({
-                        mode = "symbol_text",
+                        --mode = "symbol_text",
+                        mode = "text",
                         menu = {
                             buffer = "[Buf]",
                             nvim_lsp = "[LSP]",

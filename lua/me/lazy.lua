@@ -16,6 +16,31 @@ require("lazy").setup("me.plugins", {
         missing = false,
         colorscheme = { "vscode" },
     },
+    ui = {
+        border = "single",
+        icons = {
+            cmd = "[cmd]",
+            config = "[conf]",
+            event = "[event]",
+            ft = "[ft]",
+            init = "[init]",
+            import = "[imp]",
+            keys = "[key]",
+            lazy = "[lazy]",
+            loaded = "*",
+            not_loaded = "-",
+            plugin = "[plug]",
+            runtime = "[run]",
+            require = "[req]",
+            source = "[src]",
+            start = "[start]",
+            task = "[task]",
+            list = {
+                "+",
+                "-",
+            },
+        },
+    },
     change_detection = {
         notify = false
     },
