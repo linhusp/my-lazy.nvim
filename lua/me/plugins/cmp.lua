@@ -61,6 +61,7 @@ return {
                 -- modify source options and their priority
                 sources = cmp.config.sources({
                     { name = "luasnip" },
+                    { name = 'nvim_lsp_signature_help' },
                     { name = "nvim_lsp", max_item_count = 20 },
                     { name = "nvim_lua", max_item_count = 20 },
                     {
@@ -98,6 +99,7 @@ return {
     { "hrsh7th/cmp-nvim-lua", dependencies = "nvim-cmp" },
     { "hrsh7th/cmp-nvim-lsp", dependencies = "nvim-cmp" },
     { "hrsh7th/cmp-path",     dependencies = "nvim-cmp" },
+    { "hrsh7th/cmp-nvim-lsp-signature-help", dependencies = "nvim-cmp" },
     {
         "L3MON4D3/LuaSnip",
         dependencies = {
