@@ -16,6 +16,7 @@ require("lazy").setup("me.plugins", {
         missing = false,
         colorscheme = { "vscode" },
     },
+    -- remove the bloated icons spam
     ui = {
         border = "single",
         icons = {
