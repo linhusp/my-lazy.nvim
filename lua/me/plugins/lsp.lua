@@ -61,11 +61,7 @@ return {
                         on_attach = lsp_attach,
                         capabilities = lsp_capabilities,
                         settings = {
-                            Lua = {
-                                diagnostics = {
-                                    globals = { "vim" },
-                                },
-                            },
+                            Lua = { diagnostics = { globals = { "vim" } } },
                         },
                     })
                 end,

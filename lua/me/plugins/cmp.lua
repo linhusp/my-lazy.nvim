@@ -21,10 +21,12 @@ return {
                         luasnip.lsp_expand(args.body)
                     end,
                 },
+
                 window = {
                     completion = cmp.config.window.bordered(),
                     documentation = cmp.config.window.bordered(),
                 },
+
                 mapping = cmp.mapping.preset.insert({
                     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
                     ["<C-f>"] = cmp.mapping.scroll_docs(4),
@@ -55,10 +57,12 @@ return {
                         end
                     end, { "i", "s" }),
                 }),
+
                 --completion = {
                 --    autocomplete = false,
                 --    completeopt = 'menu,menuone,noselect'
                 --},
+
                 -- modify source options and their priority
                 sources = cmp.config.sources({
                     { name = "luasnip" },
@@ -75,6 +79,7 @@ return {
                 }, {
                     { name = "buffer", keyword_length = 3, max_item_count = 10 },
                 }),
+
                 -- add source info to cmp menu ft. lspkind
                 formatting = {
                     format = require("lspkind").cmp_format({
