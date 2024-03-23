@@ -118,4 +118,18 @@ return {
             })
         end,
     },
+
+    {
+        'gsuuon/note.nvim',
+        opts = {
+            spaces = { -- note roots, contains ./notes dir
+                '~/Desktop',
+            },
+            keymap = {
+                prefix = '<leader>n'
+            }
+        },
+        cmd = 'Note',
+        ft = 'note'
+    }
 }
