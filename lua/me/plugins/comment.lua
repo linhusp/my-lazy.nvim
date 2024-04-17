@@ -1,15 +1,15 @@
 -- effective way to comment codes
 return {
-    "numToStr/Comment.nvim",
+    'numToStr/Comment.nvim',
     config = function()
-        require("Comment").setup({
+        require('Comment').setup({
             -- ignore empty lines
-            ignore = "^$",
+            ignore = '^$',
             -- add space after comment symbol
             padding = function()
                 local not_allowed = {
-                    "confini",
-                    "ini",
+                    'confini',
+                    'ini',
                 }
                 for _, ft in ipairs(not_allowed) do
                     if vim.bo.filetype == ft then
@@ -21,21 +21,21 @@ return {
             -- weather the cursor should stay at its position
             toggler = {
                 -- line-comment toggle keymap
-                line = "gcc",
+                line = 'gcc',
                 -- block-comment toggle keymap
-                block = "gbc",
+                block = 'gbc',
             },
             -- lhs of operator-pending mappings in normal and visual mode
             opleader = {
                 -- line-comment keymap
-                line = "gc",
+                line = 'gc',
                 -- block-comment keymap
-                block = "gb",
+                block = 'gb',
             },
             -- lhs of extra mappings
             extra = {
                 -- add comment at the end of line
-                eol = "gcA",
+                eol = 'gcA',
             },
             -- enable keybindings
             -- NOTE: If given `false` then the plugin won't create any mappings
@@ -48,7 +48,7 @@ return {
             },
         })
         -- custom commentstring :h Comment.ft
-        local ft = require("Comment.ft")
-        ft({ "confini", "ini" }, "#%s")
+        local ft = require('Comment.ft')
+        ft({ 'confini', 'ini' }, '#%s')
     end,
 }

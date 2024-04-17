@@ -1,12 +1,12 @@
 -- better syntax highlighting
 return {
     {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        version = "v0.9.2",
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate',
+        version = 'v0.9.2',
         pin = true,
         config = function()
-            require("nvim-treesitter.configs").setup({
+            require('nvim-treesitter.configs').setup({
                 sync_install = false,
                 auto_install = true,
                 highlight = {
@@ -22,29 +22,29 @@ return {
                 },
                 indent = {
                     enable = true,
-                    disable = { "python" },
+                    disable = { 'python' },
                 },
                 rainbow = {
                     enable = true,
                     -- which query to use for finding delimiters
                     query = {
-                        "rainbow-parens",
+                        'rainbow-parens',
                     },
                     -- highlight the entire buffer all at once
-                    strategy = require("ts-rainbow").strategy.global,
+                    strategy = require('ts-rainbow').strategy.global,
                     hlgroups = {
-                        "TSRainbowWhite",
-                        "TSRainbowViolet",
-                        "TSRainbowCyan",
+                        'TSRainbowWhite',
+                        'TSRainbowViolet',
+                        'TSRainbowCyan',
                     },
                 },
                 endwise = {
                     enable = true,
                 },
             })
-            require("nvim-ts-autotag").setup({ enable = true })
+            require('nvim-ts-autotag').setup({ enable = true })
         end,
     },
-    { "HiPhish/nvim-ts-rainbow2", dependencies = "nvim-treesitter" },
-    { "windwp/nvim-ts-autotag",   dependencies = "nvim-treesitter" },
+    { 'HiPhish/nvim-ts-rainbow2', dependencies = 'nvim-treesitter' },
+    { 'windwp/nvim-ts-autotag',   dependencies = 'nvim-treesitter' },
 }

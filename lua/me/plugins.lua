@@ -2,31 +2,31 @@
 return {
     -- session
     {
-        "dhruvasagar/vim-prosession",
+        'dhruvasagar/vim-prosession',
         lazy = false,
         priority = 900,
-        dependencies = { "tpope/vim-obsession" },
+        dependencies = { 'tpope/vim-obsession' },
         init = function()
-            vim.g.prosession_dir = vim.fn.expand("~/.cache/nvim/sessions/")
-            vim.g.prosession_on_startup = 1
+            vim.g.prosession_dir = vim.fn.expand('~/.cache/nvim/sessions/')
+            vim.g.prosession_on_startup = 0
         end
     },
 
     -- colorscheme
-    { "rktjmp/lush.nvim" },
+    { 'rktjmp/lush.nvim' },
     {
-        "Mofiqul/vscode.nvim",
+        'Mofiqul/vscode.nvim',
         lazy = false,
         priority = 1000,
         config = function()
             vim.opt.termguicolors = true
-            vim.o.background = "dark"
-            require("vscode").setup({
+            vim.o.background = 'dark'
+            require('vscode').setup({
                 transparent = true,
                 italic_comments = false,
                 disable_nvimtree_bg = true,
             })
-            require("vscode").load()
+            require('vscode').load()
         end,
     },
 
