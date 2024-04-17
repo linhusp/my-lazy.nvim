@@ -65,8 +65,15 @@ return {
                         },
                     })
                 end,
+                ['rust_analyzer'] = function()
+                end,
             })
         end,
     },
     { "neovim/nvim-lspconfig" },
+    {
+        'mrcjkb/rustaceanvim',
+        version = '^4',
+        lazy = false,
+    },
 }
