@@ -12,24 +12,6 @@ return {
         end
     },
 
-    -- colorscheme
-    { 'rktjmp/lush.nvim' },
-    {
-        'Mofiqul/vscode.nvim',
-        lazy = false,
-        priority = 1000,
-        config = function()
-            vim.opt.termguicolors = true
-            vim.o.background = 'dark'
-            require('vscode').setup({
-                transparent = true,
-                italic_comments = false,
-                disable_nvimtree_bg = true,
-            })
-            require('vscode').load()
-        end,
-    },
-
     -- status line
     {
         'nvim-lualine/lualine.nvim',
