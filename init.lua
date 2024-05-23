@@ -3,4 +3,5 @@ if vim.g.vscode then
 else
     require('me.config')
     require('me.lazy')
+    require('me.terminal')
 end
