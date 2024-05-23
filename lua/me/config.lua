@@ -7,6 +7,7 @@ vim.g.loaded_netrwPlugin = 1
 -- BASE CONFIG --
 -----------------
 
+vim.opt.termguicolors = true
 vim.opt.background = 'dark'
 vim.opt.listchars = {
     --tab = '|.',
@@ -16,12 +17,15 @@ vim.opt.listchars = {
     precedes = '<',
     nbsp = '%'
 }
+vim.opt.fillchars = {
+    eob = ' ',
+}
 vim.opt.list = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = 'yes'
 vim.opt.cursorline = true
---vim.opt.guicursor = { ['i-ci-ve'] = 'block' } -- a more vanilla look but...
+--vim.opt.guicursor = { ['i-ci-ve'] = 'block' } -- a more vanilla cursor but...
 vim.opt.scrolloff = 5
 
 -- indent
@@ -68,7 +72,7 @@ vim.opt.mousemodel = 'extend'
 vim.g.mapleader = ' '
 
 -- source lua buffer
---vim.keymap.set('n', '<leader>ss', ':luafile %<CR>')
+vim.keymap.set('n', '<leader>l', ':luafile %<CR>')
 
 -- just write
 vim.keymap.set('n', '<leader>w', ':w<CR>')
@@ -109,6 +113,9 @@ vim.keymap.set({ 'n', 'v' }, '<leader>d', '"+d')
 -- select lastest text block
 vim.keymap.set('', 'gV', '`[v`]')
 
+-- enable `&` for other modes
+vim.keymap.set({ 'v' }, '&', ':&&<CR>')
+
 -- resize windows effectively
 vim.keymap.set('', '<A-=>', ':vertical resize +5<CR>')
 vim.keymap.set('', '<A-->', ':vertical resize -5<CR>')
@@ -117,8 +124,8 @@ vim.keymap.set('', '<A-S-->', ':resize -5<CR>')
 
 -- I dont want to break my littefinger holding ctrl none stop everyday
 -- now holding my thumb everyday instead
-vim.keymap.set('n', '<A-u>', '<C-u>')
-vim.keymap.set('n', '<A-d>', '<C-d>')
+vim.keymap.set('', '<A-u>', '<C-u>')
+vim.keymap.set('', '<A-d>', '<C-d>')
 
 -- switch to the last used buffer
 vim.keymap.set('n', '<leader>o', '<C-^>')
