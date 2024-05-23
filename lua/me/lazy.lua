@@ -43,6 +43,7 @@ require('lazy').setup('me.plugins', {
         },
     },
     change_detection = {
-        -- enabled = true,
+        enabled = true,
+        notify = false,
     },
 })
