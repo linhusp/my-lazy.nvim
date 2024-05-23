@@ -25,7 +25,7 @@ return {
                     disable = { 'python' },
                 },
                 rainbow = {
-                    enable = true,
+                    enable = false,
                     -- which query to use for finding delimiters
                     query = {
                         'rainbow-parens',
