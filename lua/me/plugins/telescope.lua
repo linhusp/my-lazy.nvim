@@ -2,15 +2,22 @@
 return {
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.5',
-        pin = true,
+        version = '*',
         dependencies = { 'nvim-lua/plenary.nvim' },
         config = function()
             require('telescope').setup({
-                pickers = {
-                    find_files = { theme = 'dropdown' },
-                    buffers = { theme = 'dropdown' },
-                    grep_string = { theme = 'dropdown' },
+                defaults = {
+                    -- sorting_strategy = 'ascending',
+                    path_display = { 'truncate' },
+                    layout_strategy = 'vertical',
+                    layout_config = {
+                        vertical = {
+                            preview_cutoff = 1,
+                            width = function(_, max_col, _)
+                                return math.min(max_col, 80)
+                            end,
+                        },
+                    },
                 },
             })
             local builtin = require('telescope.builtin')
