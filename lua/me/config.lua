@@ -119,8 +119,8 @@ vim.keymap.set({ 'v' }, '&', ':&&<CR>')
 -- resize windows effectively
 vim.keymap.set('', '<A-=>', ':vertical resize +5<CR>')
 vim.keymap.set('', '<A-->', ':vertical resize -5<CR>')
-vim.keymap.set('', '<A-S-=>', ':resize +5<CR>')
-vim.keymap.set('', '<A-S-->', ':resize -5<CR>')
+vim.keymap.set('', '<A-+>', ':resize +5<CR>')
+vim.keymap.set('', '<A-_>', ':resize -5<CR>')
 
 -- I dont want to break my littefinger holding ctrl none stop everyday
 -- now holding my thumb everyday instead
