@@ -10,7 +10,7 @@ return {
                 local line, col = unpack(vim.api.nvim_win_get_cursor(0))
                 return col ~= 0
                     and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match('%s')
-                    == nil
+                        == nil
             end
             local luasnip = require('luasnip')
             require('luasnip.loaders.from_vscode').lazy_load()
@@ -101,10 +101,10 @@ return {
             -- cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
         end,
     },
-    { 'hrsh7th/cmp-buffer',   dependencies = 'nvim-cmp' },
+    { 'hrsh7th/cmp-buffer', dependencies = 'nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lua', dependencies = 'nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lsp', dependencies = 'nvim-cmp' },
-    { 'hrsh7th/cmp-path',     dependencies = 'nvim-cmp' },
+    { 'hrsh7th/cmp-path', dependencies = 'nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lsp-signature-help', dependencies = 'nvim-cmp' },
     {
         'L3MON4D3/LuaSnip',

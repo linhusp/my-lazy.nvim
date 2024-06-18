@@ -9,7 +9,7 @@ return {
         init = function()
             vim.g.prosession_dir = vim.fn.expand('~/.cache/nvim/sessions/')
             vim.g.prosession_on_startup = 0
-        end
+        end,
     },
 
     -- status line
@@ -33,7 +33,7 @@ return {
         ft = 'python',
         config = function()
             vim.g.python_pep8_indent_hang_closing = 0
-        end
+        end,
     },
 
     -- mini project
@@ -47,9 +47,9 @@ return {
                     delay = 0,
                     animation = custom_animation,
                 },
-                symbol = '┆'
+                symbol = '|',
             })
-        end
+        end,
     },
     -- { 'echasnovski/mini.statusline', version = '*',   opts = {} },
     { 'echasnovski/mini.pairs',      version = '*',   opts = {} },
@@ -84,11 +84,11 @@ return {
                 '*',
                 '!python',
                 css = { rgb_fn = true },
-                html = { names = false }
+                html = { names = false },
             },
             user_default_options = {
                 mode = 'background',
-            }
+            },
         },
     },
 
@@ -100,7 +100,7 @@ return {
             width = 100,
             buffer = {
                 blend = -0.1,
-            }
+            },
         },
     },
 

@@ -37,7 +37,7 @@ vim.opt.shiftwidth = 4
 
 -- status
 vim.opt.encoding = 'utf-8'
-vim.opt.laststatus = 2  -- always show status line
+vim.opt.laststatus = 2 -- always show status line
 vim.opt.showtabline = 1 -- show tab if at least two tab pages
 
 -- searching
@@ -59,7 +59,7 @@ vim.opt.wrap = true
 vim.opt.linebreak = true
 
 -- disable the annoying auto-commenting
-vim.cmd [[autocmd BufEnter * set formatoptions-=cro]]
+vim.cmd([[autocmd BufEnter * set formatoptions-=cro]])
 
 -- mouse, but why?
 vim.opt.mousemodel = 'extend'
@@ -131,13 +131,9 @@ vim.keymap.set('', '<A-d>', '<C-d>')
 vim.keymap.set('n', '<leader>o', '<C-^>')
 
 -- swapping windows vertically to horizontally
-vim.keymap.set(
-    '', '<leader>S', '<C-w>t<C-w>K', { noremap = true, silent = true }
-)
+vim.keymap.set('', '<leader>S', '<C-w>t<C-w>K', { noremap = true, silent = true })
 -- viceversa
-vim.keymap.set(
-    '', '<leader>s', '<C-w>t<C-w>H', { noremap = true, silent = true }
-)
+vim.keymap.set('', '<leader>s', '<C-w>t<C-w>H', { noremap = true, silent = true })
 
 -- nagigate between windows in all modes
 vim.keymap.set({ 'i', 'n', 'v', 't' }, '<A-h>', '<C-\\><C-n><C-w>h')

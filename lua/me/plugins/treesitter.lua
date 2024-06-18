@@ -46,5 +46,5 @@ return {
         end,
     },
     { 'HiPhish/nvim-ts-rainbow2', dependencies = 'nvim-treesitter' },
-    { 'windwp/nvim-ts-autotag',   dependencies = 'nvim-treesitter' },
+    { 'windwp/nvim-ts-autotag', dependencies = 'nvim-treesitter' },
 }
